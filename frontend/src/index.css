@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-display text-gray-900 antialiased;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .mood-button {
+    @apply px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .mood-creative {
+    @apply bg-mood-creative text-white hover:bg-opacity-90 focus:ring-mood-creative;
+  }
+  
+  .mood-excited {
+    @apply bg-mood-excited text-gray-800 hover:bg-opacity-90 focus:ring-mood-excited;
+  }
+  
+  .mood-calm {
+    @apply bg-mood-calm text-white hover:bg-opacity-90 focus:ring-mood-calm;
+  }
+  
+  .mood-confident {
+    @apply bg-mood-confident text-white hover:bg-opacity-90 focus:ring-mood-confident;
+  }
+  
+  .mood-sad {
+    @apply bg-mood-sad text-white hover:bg-opacity-90 focus:ring-mood-sad;
+  }
+  
+  .mood-angry {
+    @apply bg-mood-angry text-white hover:bg-opacity-90 focus:ring-mood-angry;
+  }
+  
+  .mood-happy {
+    @apply bg-mood-happy text-white hover:bg-opacity-90 focus:ring-mood-happy;
+  }
+  
+  .mood-neutral {
+    @apply bg-mood-neutral text-white hover:bg-opacity-90 focus:ring-mood-neutral;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
